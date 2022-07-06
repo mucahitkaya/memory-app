@@ -5,6 +5,20 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>Hellllllooo World</Text>
+      <Text>Hellllllooo World</Text>
+      <Text>Hellllllooo World</Text>
+      <Text>Hellllllooo World</Text>
+      <Text>Hellllllooo World</Text>
+      <Text>Hellllllooo World</Text>
+      <Text>Hellllllooo World</Text>
+      <Text>Hellllllooo World</Text>
+      <Text>Hellllllooo World</Text>
+      <Text>Hellllllooo World</Text>
+      <Text>Hellllllooo World</Text>
+      <Text style={styles.textStyles}>Hellllllooo World</Text>
+      <Text>Hell1llllooo World</Text>
+      <Text>Helll11lllooo World</Text>
+      <Text>Hellllllooo World</Text>
       <StatusBar style="auto" />
     </View>
   );
@@ -16,5 +30,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  textStyles:{
+    color:"blue",
   },
 });
