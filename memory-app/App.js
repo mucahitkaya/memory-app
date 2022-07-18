@@ -1,24 +1,17 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import { Button, StyleSheet, Text, TextInput, View } from "react-native";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Hellllllooo World</Text>
-      <Text>Hellllllooo World</Text>
-      <Text>Hellllllooo World</Text>
-      <Text>Hellllllooo World</Text>
-      <Text>Hellllllooo World</Text>
-      <Text>Hellllllooo World</Text>
-      <Text>Hellllllooo World</Text>
-      <Text>Hellllllooo World</Text>
-      <Text>Hellllllooo World</Text>
-      <Text>Hellllllooo World</Text>
-      <Text>Hellllllooo World</Text>
-      <Text style={styles.textStyles}>Hellllllooo World</Text>
-      <Text>Hell1llllooo World</Text>
-      <Text>Helll11lllooo World</Text>
-      <Text>Hellllllooo World</Text>
+      <View style={styles.inputContainer}>
+        <TextInput style={styles.textInput} placeholder="Set your goal here." />
+        <Button title="Add Goal" />
+      </View>
+      <View>
+        <Text>Your</Text>
+        <Text>Memory app</Text>
+      </View>
       <StatusBar style="auto" />
     </View>
   );
@@ -26,12 +19,17 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#D4E09B',
-    alignItems: 'center',
-    justifyContent: 'center',
+    padding: 50,
   },
-  textStyles:{
-    color:"red",
+  inputContainer: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+  },
+  textInput: {
+    borderWidth: 1,
+    borderColor: "#cccccc",
+    width: "80%",
+    padding: 8,
+    margin: 1,
   },
 });
